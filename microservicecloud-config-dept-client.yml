@@ -23,9 +23,9 @@ spring:
      max-wait-millis: 200    # 等待连接获取的最大超时时间
 
 mybatis:
-  config-location: classpath:mybatis/mybaits.cfg.xml
-  type-aliases-package: cn.com.cloud.entities
-  mapper-locations: classpath:mybatis/mapper/**/*.xml
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: cn.com.cloud.entities               # 所有Entity别名类所在包
+  mapper-locations: classpath:mybatis/mapper/**/*.xml     # mapper映射文件
 
 eureka:
   instance:
